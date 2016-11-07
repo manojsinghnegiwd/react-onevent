@@ -1,0 +1,36 @@
+{
+  "name": "react-onevent",
+  "version": "1.0.0",
+  "description": "Handle enter and spacebar event with OnEvent",
+  "main": "index.js",
+  "scripts": {
+    "build": "./node_modules/.bin/babel src/react-onevent.jsx -o index.js",
+    "dev": "./node_modules/.bin/babel src/react-onevent.jsx  -o example/react-onevent.js",
+    "prepublish": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/manojsinghnegiwd/react-onevent"
+  },
+  "bugs": {
+    "url": "https://github.com/manojsinghnegiwd/react-onevent/issues"
+  },
+  "keywords": [
+    "react-onevent",
+    "react",
+    "react component",
+    "onEnter",
+    "onSpace"
+  ],
+  "author": "Manoj Singh Negi",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^15.3.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.16.0",
+    "babel-preset-es2015": "^6.16.0",
+    "babel-preset-react": "^6.16.0",
+    "babel-preset-stage-0": "^6.16.0"
+  }
+}
