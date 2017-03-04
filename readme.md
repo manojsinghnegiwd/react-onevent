@@ -2,7 +2,7 @@ React OnEvent
 =====================
 > Handle enter and spacebar event with OnEvent
 
-OnEvent is a react stateless functional component which binds a onKeyPress eventlistener to its children component , whenever it detects a spacebar or enter on children component it calls the provided function. Additionaly if provided children is a input or textarea it will return the input value in value argument.
+OnEvent is a react stateless functional component which binds a onKeyPress eventlistener to its children component , whenever it detects a spacebar or enter on children component it calls the provided function with event as the argument.
 
 ##### Note: OnEvent just takes 1 children providing it multiple will result in error.
 
