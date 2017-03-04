@@ -12,14 +12,12 @@ export default function onEvent (props) {
 
 		let handler = (event) => {
 			if (event.key == 'Enter' ) { // if enter key is pressed
-				let value = event.target.value || '';
 				if(props.enter) { // if enter prop is passed
-					props.enter(value);
+					props.enter(event);
 				}
 			} else if (event.key === ' ' && event.key.length == 1) { // if space key is pressed
-				let value = event.target.value || '';
 				if(props.space) { // if space prop is passed
-					props.space(value);
+					props.space(event);
 				}
 			}
 		}
