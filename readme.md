@@ -18,7 +18,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import OnEvent from 'react-onevent';
 ReactDOM.render(
-<OnEvent enter={ (value) => { console.log( 'enter key : ' + value) } } space={ (value) => { console.log( 'space key : ' + value) } }>
+<OnEvent enter={ (event) => { console.log( 'enter key pressed') } } space={ (event) => { console.log( 'space key pressed') } }>
     <input type="text" />
 </OnEvent>, document.getElementById('page'));
 ````
@@ -27,7 +27,7 @@ Props
 ## enter
 pass a function to call when enter key is pressed on the child component.
 ```html
-<OnEvent enter={ (value) => { console.log( 'enter key : ' + value) } }>
+<OnEvent enter={ (event) => { console.log( 'enter key pressed') } }>
     <input type="text" />
 </OnEvent>
 ```
@@ -35,7 +35,7 @@ pass a function to call when enter key is pressed on the child component.
 ## space
 pass a function to call when spacebar is pressed on the child component.
 ```html
-<OnEvent space={ (value) => { console.log( 'space key : ' + value) } }>
+<OnEvent space={ (event) => { console.log( 'space key pressed') } }>
     <input type="text" />
 </OnEvent>
 ```
