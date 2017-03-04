@@ -1,6 +1,6 @@
 import React from 'react';
 import ReacDOM from 'react-dom';
-import OnEvent from 'react-onevent';
+import OnEvent from './react-onevent';
 
 class App extends React.Component {
 	render() {
@@ -8,8 +8,8 @@ class App extends React.Component {
 			<div className="jumbotron">
 				<div className="col-lg-2">
 					<OnEvent
-						enter={ (value) => { console.log( 'enter key is pressed data is : ' + value) } }
-						space={ (value) => { console.log( 'space key is pressed data is : ' + value) } }
+						enter={ (event) => { console.log( 'enter key pressed') } }
+						space={ (event) => { console.log( 'space key pressed') } }
 					>
 						<input type="text" />
 					</OnEvent>
