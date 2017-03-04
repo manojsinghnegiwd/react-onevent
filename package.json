@@ -1,6 +1,6 @@
 {
   "name": "react-onevent",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Handle enter and spacebar event with OnEvent",
   "main": "index.js",
   "scripts": {
